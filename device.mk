@@ -76,4 +76,4 @@ $(call soong_config_set_bool,wpa_supplicant_8,board_wlan_bcmdhd_sae,true)
 $(call inherit-product, device/samsung/universal9830-common/device-hubble.mk)
 
 # Inherit from the proprietary version
-$(call inherit-product-if-exists, vendor/samsung/x1s/x1s-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/c1s/c1s-vendor.mk)
