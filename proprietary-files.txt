@@ -5,21 +5,22 @@ vendor/etc/dolby/dax-default.xml
 vendor/lib/soundfx/libswdap.so
 
 # Audio (Firmware)
-vendor/firmware/APBargeIn_AUDIO_SLSI.bin
 vendor/firmware/APBiBF_AUDIO_SLSI.bin
-vendor/firmware/APDV_AUDIO_SLSI.bin
-vendor/firmware/APTV_AUDIO_SLSI.bin
 vendor/firmware/AP_AUDIO_SLSI.bin
+vendor/firmware/APDV_AUDIO_SLSI.bin
+vendor/firmware/APBargeIn_AUDIO_SLSI.bin
+vendor/firmware/APTV_AUDIO_SLSI.bin
+vendor/firmware/APSV_AUDIO_SLSI.bin
 vendor/firmware/SoundBoosterParam.bin
 
 # Bluetooth
-vendor/firmware/bcm4375B1_murata.hcd
-vendor/firmware/bcm4375B1_semco.hcd
-vendor/firmware/bcm4375B1_semco_sem.hcd
-vendor/firmware/bcmdhd_clm.blob
-vendor/firmware/bcmdhd_mfg.bin_b1
-vendor/firmware/bcmdhd_mon.bin_b1
 vendor/firmware/bcmdhd_sta.bin_b1
+vendor/firmware/bcmdhd_mon.bin_b1
+vendor/firmware/bcm4375B1_murata.hcd
+vendor/firmware/bcm4375B1_semco_sem.hcd
+vendor/firmware/bcmdhd_mfg.bin_b1
+vendor/firmware/bcm4375B1_semco.hcd
+vendor/firmware/bcmdhd_clm.blob
 
 # Camera
 vendor/lib64/hw/camera.exynos990.so
@@ -66,9 +67,7 @@ vendor/bin/hw/gpsd
 vendor/lib64/libwrappergps.so
 
 # NFC
-vendor/etc/nfc/sec_s3nsen4_hwreg.bin
-vendor/etc/nfc/sec_s3nsen4_swreg.bin
-vendor/firmware/nfc/sec_s3nsen4_firmware.bin
+vendor/firmware/nfc/libsn100u_fw.so:vendor/lib64/libsn100u_fw.so
 
 # RIL
 vendor/etc/floating_feature.xml
@@ -102,15 +101,9 @@ vendor/tee/driver/00000000-0000-0000-0000-53626f786476
 
 # Wi-Fi
 vendor/etc/wifi/indoorchannel.info
-vendor/firmware/nvram.txt_1rh_es11_b0
-vendor/firmware/nvram.txt_1rh_es12_b0
-vendor/firmware/nvram.txt_1rh_es13_b0
-vendor/firmware/nvram.txt_1rh_es32_b0
-vendor/firmware/nvram.txt_1rh_es41_b1
-vendor/firmware/nvram.txt_1rh_es42_b1
-vendor/firmware/nvram.txt_1rh_es43_b1
 vendor/firmware/nvram.txt_CS01_semco_b1
-vendor/firmware/nvram.txt_ES00_semco_b0
-vendor/firmware/nvram.txt_ES01_semco_b0
-vendor/firmware/nvram.txt_ES02_semco_b0
-vendor/firmware/nvram.txt_ES03_semco_b0
+vendor/firmware/nvram.txt_1rh_es43_b1
+
+# HWC
+vendor/lib64/hw/hwcomposer.exynos990.so
+vendor/lib64/libExynosHWCService.so
